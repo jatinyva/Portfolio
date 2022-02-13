@@ -54,6 +54,13 @@
             justify-content: center;
             align-items: center;
         }
+
+        .adstrip {
+            width: 100%;
+            height: 30px;
+            background-color: salmon;
+            text-align: center;
+        }
     </style>
     <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
     <script>
@@ -104,7 +111,7 @@
                 unde quibusdam laborum mollitia, nulla deserunt quas a sit ducimus sunt? Nostrum, at illum? Cumque cum
                 architecto nulla neque accusamus, reiciendis atque error exercitationem ea unde nobis natus ex sapiente
                 consequatur itaque molestiae magnam.</p>
-
+            <div class="adstrip" id="adstrip_content"></div>
             <div class="center-ad">
                 <!-- /21742552194/Portfolio/Expand -->
                 <div id='div-gpt-ad-1644695333237-0'>
@@ -113,6 +120,19 @@
                     </script>
                 </div>
             </div>
+            <script>
+                var adstrip_var = document.getElementById("adstrip_content");
+                console.log(adstrip_var);
+
+                if (window.matchMedia("(min-width: 500px)").matches) {
+                    console.log("Screen width is at least 500px")
+                    adstrip_var.innerHTML = "Hover On The Ad To See The Effect ";
+                } else {
+                    console.log("Screen less than 500px")
+                    adstrip_var.innerHTML = "Tap On The Ad To See The Effect ";
+                }
+
+            </script>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore officiis, facere ea distinctio ad
                 laborum animi vitae aperiam doloribus porro accusantium neque nisi quo ullam est deserunt ab illum sint
                 consequuntur repellat fugit modi? Rerum magni cupiditate, velit magnam distinctio quia quo minus quam ut
