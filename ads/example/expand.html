@@ -47,13 +47,21 @@
 
         main>.container {
             padding: 60px 15px 0;
+
+        }
+
+        .center-ad {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
     <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
     <script>
         window.googletag = window.googletag || { cmd: [] };
         googletag.cmd.push(function () {
-            googletag.defineSlot('/21742552194/Portfolio/Expand', [[320, 100], [1000, 60]], 'div-gpt-ad-1644695333237-0').addService(googletag.pubads());
+            var Responsive_Ad = googletag.sizeMapping().addSize([992, 0], [[1000, 60]]).addSize([768, 0], [[320, 100]]).addSize([320, 0], [[320, 100]]).addSize([0, 0], [[320, 50], [1, 1]]).build();
+            googletag.defineSlot('/21742552194/Portfolio/Expand', [[320, 100], [1000, 60]], 'div-gpt-ad-1644695333237-0').defineSizeMapping(Responsive_Ad).addService(googletag.pubads());
             googletag.pubads().enableSingleRequest();
             googletag.enableServices();
         });
@@ -98,11 +106,12 @@
                 unde quibusdam laborum mollitia, nulla deserunt quas a sit ducimus sunt? Nostrum, at illum? Cumque cum
                 architecto nulla neque accusamus, reiciendis atque error exercitationem ea unde nobis natus ex sapiente
                 consequatur itaque molestiae magnam.</p>
-            <!-- /21742552194/Portfolio/Expand -->
-            <div id='div-gpt-ad-1644695333237-0'>
-                <script>
-                    googletag.cmd.push(function () { googletag.display('div-gpt-ad-1644695333237-0'); });
-                </script>
+            <div class="center-ad">
+                <div id='div-gpt-ad-1644695333237-0'>
+                    <script>
+                        googletag.cmd.push(function () { googletag.display('div-gpt-ad-1644695333237-0'); });
+                    </script>
+                </div>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore officiis, facere ea distinctio ad
                 laborum animi vitae aperiam doloribus porro accusantium neque nisi quo ullam est deserunt ab illum sint
